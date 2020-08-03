@@ -2,6 +2,9 @@
   <div>
       我是新闻页面
       <button @click="handleNodeJsFs">使用fs 模块读取package.json</button>
+      <section class="container">
+        <section class="child"></section>
+      </section>
   </div>
 </template>
 
@@ -26,4 +29,15 @@ export default {
   mounted() {},
 };
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.container{
+  width: 200px;
+  height: 100px;
+  border:1px solid red;
+  .child{
+    widows: 100px;
+    height: 50px;
+    border:1px solid black
+  }
+}
+</style>
